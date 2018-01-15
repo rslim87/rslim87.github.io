@@ -94,7 +94,8 @@ $(function() {
       $.ajax({
         type: 'POST',
         url: $(form).attr('action'),
-        data: formData
+        data: formData,
+        contentType: "application/json; charset=utf-8",
       })
     
     });

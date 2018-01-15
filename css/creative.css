@@ -80,6 +80,16 @@ img::-moz-selection {
   visibility: hidden;
  }
 
+ #portrait {
+  height: 200px;
+  width: 200px;
+ }
+
+ #aboutme {
+  padding-top: 10px;
+  margin-top: -130px;
+ }
+
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
