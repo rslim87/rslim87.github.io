@@ -72,8 +72,8 @@ img::-moz-selection {
  } 
 
  #contactform {
-  padding-bottom: 55px;
-  margin-bottom: 150px;
+  padding-bottom: -200px;
+  margin-bottom: 50px;
  }
 
  .hidden {
@@ -99,7 +99,7 @@ img::-moz-selection {
  }
 
  #contact {
-  padding-bottom: 10px;
+  padding-bottom: 50px;
  }
 
 
