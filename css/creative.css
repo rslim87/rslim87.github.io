@@ -77,6 +77,11 @@ img::-moz-selection {
   margin-bottom: 50px;
  }
 
+ #contact-form {
+  text-align: center;
+
+ }
+
  .hidden {
   display: none;
   visibility: hidden;
