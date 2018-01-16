@@ -69,10 +69,11 @@ img::-moz-selection {
 
  #contact {
   padding-top: 20px;
+  padding-bottom: 50px;
  } 
 
  #contactform {
-  padding-bottom: -200px;
+  padding-bottom: 20px;
   margin-bottom: 50px;
  }
 
@@ -99,9 +100,12 @@ img::-moz-selection {
  }
 
  #contact {
-  padding-bottom: 50px;
+  padding-bottom: -10px;
  }
 
+#socialbuttons {
+  text-align: center;
+}
 
 
 #mainNav {
