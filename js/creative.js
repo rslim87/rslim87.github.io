@@ -77,26 +77,31 @@
 })(jQuery); // End of use strict
 
   //Contact Form
-$(function() {
-    // Get the form.
-    var form = $('#ajax-contact');
+$(function () {
 
-    // Get the messages div.
-    var formMessages = $('#form-messages');
+    $('#contact-form').validator();
 
-    // Set up an event listener for the contact form.
-    $(form).submit(function(event) {
-    // Stop the browser from submitting the form.
-      event.preventDefault();
+    $('#contact-form').on('submit', function (e) {
+        if (!e.isDefaultPrevented()) {
+            var url = "contact.php";
 
-      var formData = $(form).serialize();
-    
-      $.ajax({
-        type: 'POST',
-        url: $(form).attr('action'),
-        data: formData,
-        contentType: "application/json; charset=utf-8",
-      })
-    
-    });
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: $(this).serialize(),
+                success: function (data)
+                {
+                    var messageAlert = 'alert-' + data.type;
+                    var messageText = data.message;
+
+                    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                    if (messageAlert && messageText) {
+                        $('#contact-form').find('.messages').html(alertBox);
+                        $('#contact-form')[0].reset();
+                    }
+                }
+            });
+            return false;
+        }
+    })
 });

@@ -73,7 +73,7 @@ img::-moz-selection {
 
  #contactform {
   padding-bottom: 55px;
-  margin-bottom: 80px;
+  margin-bottom: 150px;
  }
 
  .hidden {
@@ -95,7 +95,14 @@ img::-moz-selection {
   height: 40px;
   width: 40px;
   margin-right: 25px;
+
  }
+
+ #contact {
+  padding-bottom: 10px;
+ }
+
+
 
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
